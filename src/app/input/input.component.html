@@ -1,7 +1,8 @@
+<h1>My Cool Dictionary</h1>
 <div class="input-div">
     <h3>Enter a world to search for:</h3>
     <form #form="ngForm" (submit)="onSubmit()">
-        <input type="text" name="word"  [(ngModel)]="Word">
+        <input type="text" name="word"  [(ngModel)]="Word" placeholder="Search for a word">
       </form>
     
 </div>

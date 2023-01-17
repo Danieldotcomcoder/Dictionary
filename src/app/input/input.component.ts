@@ -24,8 +24,6 @@ export class InputComponent implements OnInit {
        this.fetchData.getWordDetails(word).subscribe({
         next: (response: any) => {
           this.wordData = response
-          console.log(this.wordData);
-      
         }
       })
   }
@@ -33,8 +31,6 @@ export class InputComponent implements OnInit {
        this.fetchData.getWordSynonyms(word).subscribe({
         next: (response: any) => {
           this.WordSynonyms = response.synonyms
-          console.log(this.WordSynonyms);
-      
         }
       })
   }
@@ -42,5 +38,6 @@ export class InputComponent implements OnInit {
   onSubmit() {
     this.getWordInfo(this.Word)
     this.getSynonyms(this.Word)
+    this.Word = '';
   }
 }
