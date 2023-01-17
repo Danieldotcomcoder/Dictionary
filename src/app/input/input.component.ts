@@ -12,12 +12,12 @@ export class InputComponent implements OnInit {
     
    }
 
-  initialWord:string = 'Study'
+  Word:string = 'Dictionary'
   wordData: any
   WordSynonyms: any
   ngOnInit(): void {
-    this.getWordInfo(this.initialWord)
-    this.getSynonyms(this.initialWord)
+    this.getWordInfo(this.Word)
+    this.getSynonyms(this.Word)
   }
 
   getWordInfo(word: string) {
@@ -37,5 +37,10 @@ export class InputComponent implements OnInit {
       
         }
       })
+  }
+
+  onSubmit() {
+    this.getWordInfo(this.Word)
+    this.getSynonyms(this.Word)
   }
 }
