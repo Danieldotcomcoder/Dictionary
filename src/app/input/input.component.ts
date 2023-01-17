@@ -12,7 +12,7 @@ export class InputComponent implements OnInit {
     
    }
 
-  initialWord:string = 'chess'
+  initialWord:string = 'Study'
   wordData: any
   WordSynonyms: any
   ngOnInit(): void {

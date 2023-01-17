@@ -1,0 +1,11 @@
+body, html {
+    font-family: sans-serif;
+    height: 99%;
+    background-image: url("../src/assets/gradienta-LeG68PrXA6Y-unsplash.jpg");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+ 
+  

@@ -6,8 +6,8 @@
     
 </div>
 <div class="result" *ngIf="wordData">
-  <h2>{{wordData.word}}</h2>
-  <h4>{{wordData.results[0].partOfSpeech}}</h4>
+  <h2 class="word">{{wordData.word}}</h2>
+  <h4 class="partofspeech">{{wordData.results[0].partOfSpeech}}</h4>
    <li class="definitions" *ngFor="let item of wordData.results.slice(0,3); index as i">{{i+1}}: {{item.definition}}</li> 
    <h6 *ngIf="wordData.results[0].examples"> {{wordData.results[0].examples[0]}}</h6>
    <ul class="synonyms" *ngIf="WordSynonyms">

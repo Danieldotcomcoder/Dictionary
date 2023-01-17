@@ -2,11 +2,19 @@
     margin-top: 5%;
     width: 70%;
     height: 120px;
-    border: 1px solid black;
+    border: 2px solid lightgreen;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 20px 20px 20px lightskyblue;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: black;
+
+    
 }
 
 .input-div form {
@@ -24,14 +32,16 @@
 
 .result {
     box-sizing: border-box;
-    padding: 1%;
-    border: 1px solid black;
+    padding: 0.5%;
+    border: 1px solid green;
+    border-radius: 10px;
     width: 70%;
     margin-top: 5%;
-    height: 270px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     line-height: 10px;
+    box-shadow: 20px 20px 20px lightpink;
 }
 
 .result h2 {
@@ -40,6 +50,7 @@
 
 .result h6 {
     font-style: italic;
+    font-size: 11px;
 }
 
 .synonyms {
@@ -50,9 +61,10 @@
 }
 
 .synonyms-item {   
-    border-radius: 10px;
-    background-color: lightgreen;
+    border-radius: 8px;
+    background-color: cadetblue;
     margin-left: 10px;
+    line-height: 15px;
 
 }
 
