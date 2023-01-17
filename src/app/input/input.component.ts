@@ -11,11 +11,13 @@ export class InputComponent implements OnInit {
   constructor(private fetchData: FetchDataService) {
     
    }
+
+  initialWord:string = 'chess'
   wordData: any
   WordSynonyms: any
   ngOnInit(): void {
-    this.getWordInfo('Happy')
-    this.getSynonyms('Happy')
+    this.getWordInfo(this.initialWord)
+    this.getSynonyms(this.initialWord)
   }
 
   getWordInfo(word: string) {
