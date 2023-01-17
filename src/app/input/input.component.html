@@ -1,5 +1,12 @@
 <div class="input-div">
     <h3>Enter a world to search for:</h3>
-
-    <input type="text">
+    <form #form="ngForm">
+        <input type="text">
+      </form>
+    
+</div>
+<div class="result" *ngIf="wordData">
+  <h4>{{wordData.results[0].partOfSpeech}}</h4>
+   <p>{{wordData.results[0].definition}}</p> 
+   <h6 *ngIf="wordData.results[0].examples"> {{wordData.results[0].examples[0]}}</h6>
 </div>

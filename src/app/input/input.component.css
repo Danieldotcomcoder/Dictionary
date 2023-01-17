@@ -9,9 +9,29 @@
     align-items: center;
 }
 
-.input-div input {
+.input-div form {
     width: 90%;
     height: 20px;
+}
+
+.input-div form input {
+    width: 100%;
     border: 1px solid lightgreen;
-    border-radius: 5px;
+    height: 20px;
+    border-radius: 10px;
+
+}
+
+.result {
+    border: 1px solid black;
+    width: 70%;
+    margin-top: 5%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.result h6 {
+    
+    font-style: italic;
 }
