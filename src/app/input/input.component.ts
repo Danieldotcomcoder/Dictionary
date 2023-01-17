@@ -12,8 +12,10 @@ export class InputComponent implements OnInit {
     
    }
   wordData: any
+  WordSynonyms: any
   ngOnInit(): void {
     this.getWordInfo('Happy')
+    this.getSynonyms('Happy')
   }
 
   getWordInfo(word: string) {
@@ -21,6 +23,15 @@ export class InputComponent implements OnInit {
         next: (response: any) => {
           this.wordData = response
           console.log(this.wordData);
+      
+        }
+      })
+  }
+  getSynonyms(word: string) {
+       this.fetchData.getWordSynonyms(word).subscribe({
+        next: (response: any) => {
+          this.WordSynonyms = response.synonyms
+          console.log(this.WordSynonyms);
       
         }
       })
